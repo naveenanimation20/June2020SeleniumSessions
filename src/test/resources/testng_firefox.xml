@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="My Social Media Test Suite" thread-count="3"
+	parallel="tests" verbose="4">
+
+
+	
+	<test name="google test - firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="app.tests.GoogleTest" />
+		</classes>
+	</test>
+
+	<test name="fresh works test">
+		<parameter name="browser" value="firefox" />
+
+		<classes>
+			<class name="app.tests.FreshWorksTest" />
+		</classes>
+	</test>
+
+	<test name="rediff mail test">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="app.tests.RediffMailTest" />
+
+		</classes>
+	</test>
+
+
+
+</suite>
